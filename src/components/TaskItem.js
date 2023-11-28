@@ -20,7 +20,6 @@ const TaskItem = ({ task, overDue = false }) => {
 
   const handleDelete = () => {
     dispatch(deleteTasks(task.id));
-    console.log("hii");
   };
   useEffect(() => {
     setStatus(task.completed);
